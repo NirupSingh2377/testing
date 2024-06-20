@@ -3,9 +3,6 @@ pipeline {
         label 'slave'
     }
         stages {
-            agent {
-                label 'slave'
-            }
             stage('Build') {
                 steps {
                     sh '''
